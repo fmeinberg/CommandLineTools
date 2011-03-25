@@ -1,0 +1,29 @@
+This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands.
+
+[Installation]
+
+There are several ways to load a package into Mathematica:
+
+(1) The easiest way to load this package into Mathematica is to use Get[file], where file is the full path of the .m file that comes with this package. However, this will fail if there are dependencies and you haven't loaded the other required package.
+
+(2) To make a package available to Mathematica on a permnent basis, you should copy the .m file(s) to a location on your $Path. Default values are:
+
+ToFileName[$UserBaseDirectory,"Applications"]
+
+ToFileName[$BaseDirectory,"Applications"]
+
+(3) You can also evaluate a statement that adds a directory of your choice to the $Path. If you do that, you will need to run that statement everytime you run Mathematica, or include it in your init.m file.
+
+Once a package's directory has been added to the $Path, you can load a Mathematica package that is located within a directory in your $Path by running
+
+<<PackageName`
+
+or
+
+Needs["PackageName`"]
+
+For more details on the different modalities of loading packages into Mathematica, consult the documentation.
+
+Enjoy.
+
+-- FM

@@ -1,0 +1,1 @@
+This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands.
