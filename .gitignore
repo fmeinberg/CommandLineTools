@@ -1,4 +1,9 @@
 # Ignore description file (used to build README)
-description.txt
+PackageDescription.txt
+
+# Ignore remnants of CVS
 .project
+
+# Ignore .gitignore
+.gitignore
 

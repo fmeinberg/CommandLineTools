@@ -1,1 +1,1 @@
-This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands.
+This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands. It does not work on MS-Windows-based systems.

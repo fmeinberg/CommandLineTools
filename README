@@ -1,28 +1,46 @@
-This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands.
+This is a small package that provides an expression wrapper to the standard syntax of Unix shell commands. It does not work on MS-Windows-based systems.
 
 [Installation]
 
-There are several ways to load a package into Mathematica:
+If you are viewing this README file on GitHub, you can download this package by clicking on the Download button above.
 
-(1) The easiest way to load this package into Mathematica is to use Get[file], where file is the full path of the .m file that comes with this package. However, this will fail if there are dependencies and you haven't loaded the other required package.
+Once you have downloaded the package, there are multiple ways to load it into Mathematica. Some of theem are:
 
-(2) To make a package available to Mathematica on a permnent basis, you should copy the .m file(s) to a location on your $Path. Default values are:
+(1) The simplest way to load this package into Mathematica is to use Get[file], where file is the full path of the .m file that comes within this package. However, this will fail if there are dependencies and you haven't loaded the other required packages.
+
+(2) To make a package available to Mathematica on a permnent basis, you should copy the package folder to a location on your $Path. Default values for placing packages are:
 
 ToFileName[$UserBaseDirectory,"Applications"]
 
 ToFileName[$BaseDirectory,"Applications"]
 
-(3) You can also evaluate a statement that adds a directory of your choice to the $Path. If you do that, you will need to run that statement everytime you run Mathematica, or include it in your init.m file.
+(3) You can also evaluate a statement that adds a directory of your choice to the $Path (such as: AppendTo[$Path, myDirectory] ). If you do that, you will need to run that statement everytime you run Mathematica, or include it in your init.m file.
 
 Once a package's directory has been added to the $Path, you can load a Mathematica package that is located within a directory in your $Path by running
 
-<<PackageName`
+<<PackageName` (same as Get["PackageName`"] )
 
 or
 
 Needs["PackageName`"]
 
-For more details on the different modalities of loading packages into Mathematica, consult the documentation.
+For more details on the different modalities of loading packages into Mathematica, check the documentation.
+
+[Documentation]
+
+Documentation for this package is found in the accompanying .nb file.
+
+This package needs better documentation: both usage messages and documentation pages. If you want to help, please contact me.
+
+[Copyright]
+
+Copyright 2009-2011 Frederico Meinberg
+
+This program is free software: you can redistribute it and/or modify it under the terms of the Lesser General Public License (which is a set of additional permissions added to version 3 of the GNU General Public License) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License and the Lesser General Public License for more details.
+
+You should have received a copy of the GNU General Public License and of the Lesser General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
 
 Enjoy.
 
